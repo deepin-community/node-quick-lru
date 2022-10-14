@@ -1,0 +1,25 @@
+Source: node-quick-lru
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Raju Devidas <rajudev@disroot.org>
+Build-Depends:
+ debhelper (>= 11~)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 4.1.4
+Homepage: https://github.com/sindresorhus/quick-lru#readme
+Vcs-Git: https://salsa.debian.org/js-team/node-quick-lru.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-quick-lru
+
+Package: node-quick-lru
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: Simple "Least Recently Used" (LRU) cache
+ Useful when you need to cache something and limit memory usage.
+ Inspired by the hashlru algorithm, but instead uses Map to support
+ keys of any type, not just strings, and values can be undefined.
+ .
+ Node.js is an event-based server-side JavaScript engine.
