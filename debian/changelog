@@ -1,3 +1,70 @@
+node-quick-lru (6.1.1-4) unstable; urgency=medium
+
+  * Team upload
+  * Allow __proto__ calls to workaround ava issue
+
+ -- Yadd <yadd@debian.org>  Thu, 01 Dec 2022 12:33:30 +0100
+
+node-quick-lru (6.1.1-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-quick-lru: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 14:44:33 +0000
+
+node-quick-lru (6.1.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Mon, 27 Jun 2022 09:22:05 +0200
+
+node-quick-lru (6.1.1-1) experimental; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 6.1.1
+  * Use ava for test
+  * Build commonjs files
+
+ -- Yadd <yadd@debian.org>  Sun, 26 Jun 2022 13:14:29 +0200
+
+node-quick-lru (5.1.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Yadd ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Drop nodejs dependency
+  * Use dh-sequence-nodejs auto install
+  * New upstream version 5.1.1
+  * Enable upstream test (tape instead of ava)
+
+ -- Yadd <yadd@debian.org>  Thu, 09 Dec 2021 10:58:56 +0100
+
+node-quick-lru (2.0.0-1) unstable; urgency=medium
+
+  * New upstream version 2.0.0
+  * Bumped standards version
+  * changed the text formatting of build depends field
+
+ -- Raju Devidas <rajudev@disroot.org>  Sun, 30 Dec 2018 13:15:24 +0530
+
 node-quick-lru (1.1.0-2) unstable; urgency=medium
 
   * Team upload
