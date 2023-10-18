@@ -3,20 +3,22 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Raju Devidas <rajudev@disroot.org>
-Build-Depends:
- debhelper (>= 11~)
- , dh-buildinfo
- , nodejs
-Standards-Version: 4.1.4
-Homepage: https://github.com/sindresorhus/quick-lru#readme
-Vcs-Git: https://salsa.debian.org/js-team/node-quick-lru.git
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , ava <!nocheck>
+ , rollup
+ , node-rollup-plugin-node-resolve
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-quick-lru
+Vcs-Git: https://salsa.debian.org/js-team/node-quick-lru.git
+Homepage: https://github.com/sindresorhus/quick-lru
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-quick-lru
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: Simple "Least Recently Used" (LRU) cache
  Useful when you need to cache something and limit memory usage.
  Inspired by the hashlru algorithm, but instead uses Map to support
